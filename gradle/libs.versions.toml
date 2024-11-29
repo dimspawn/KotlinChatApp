@@ -1,0 +1,111 @@
+[versions]
+activityktx = "1.9.3"
+androidapp = "8.7.2"
+androidlib = "8.7.2"
+appcompat = "1.7.0"
+circleimageview = "2.2.0"
+constrainlayout = "2.2.0"
+convertergson = "2.9.0"
+corektx= "1.13.1"
+coroutineandroid = "1.7.3"
+coroutineplay = "1.7.3"
+coroutinescore = "1.7.3"
+daggercompiler = "2.50"
+espressocore = "3.6.1"
+extjunit = "1.2.1"
+fragmentktx = "1.8.5"
+glide = "4.16.0"
+glidecompiler = "4.16.0"
+googledagger = "2.50"
+googlematerial = "1.12.0"
+gson = "2.10.1"
+interceptor = "4.9.0"
+junit = "4.13.2"
+kotlin = "1.9.24"
+ksp = "1.9.24-1.0.20"
+lifecycle = "2.8.7"
+orgjson = "20180813"
+retrofit = "2.9.0"
+room = "2.6.1"
+socket = "2.0.1"
+
+[libraries]
+
+
+main-impl-ktx-core = { group = "androidx.core", name = "core-ktx", version.ref = "corektx" }
+main-impl-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+main-impl-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constrainlayout" }
+main-impl-google-material = { group = "com.google.android.material", name = "material", version.ref = "googlematerial" }
+main-impl-circle-image-view = { group = "de.hdodenhof", name = "circleimageview", version.ref = "circleimageview" }
+main-impl-bumptech-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+main-impl-dagger = { group = "com.google.dagger", name = "dagger", version.ref = "googledagger" }
+main-impl-ktx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityktx" }
+main-impl-ktx-fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentktx" }
+main-impl-socket-io = { group = "io.socket", name = "socket.io-client", version.ref = "socket" }
+main-impl-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+core-impl-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+core-impl-ktx-room = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+core-impl-squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+core-impl-squareup-convertergson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "convertergson" }
+core-impl-squareup-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "interceptor" }
+core-impl-kotlinx-coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinescore" }
+core-impl-kotlinx-coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutineandroid" }
+core-impl-kotlinx-corotuine-play-service = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutineplay" }
+core-impl-org-json = { group = "org.json", name = "json", version.ref = "orgjson" }
+
+main-kapt-glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glidecompiler" }
+main-kapt-google-dagger = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "daggercompiler" }
+core-kapt-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+main-testimpl-junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+main-androidtestimpl-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "extjunit" }
+main-androidtestimpl-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressocore" }
+core-androidtestimpl-room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+
+core-api-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidapp" }
+android-library = { id = "com.android.library", version.ref = "androidlib" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-ksp =  { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+
+[bundles]
+main-impls = [
+    "main-impl-ktx-core",
+    "main-impl-appcompat",
+    "main-impl-constraintlayout",
+    "main-impl-google-material",
+    "main-impl-circle-image-view",
+    "main-impl-bumptech-glide",
+    "main-impl-dagger",
+    "main-impl-ktx-activity",
+    "main-impl-ktx-fragment",
+    "main-impl-socket-io",
+    "main-impl-gson"
+]
+
+core-impls = [
+    "core-impl-room-runtime",
+    "core-impl-ktx-room",
+    "core-impl-squareup-retrofit",
+    "core-impl-squareup-convertergson",
+    "core-impl-squareup-interceptor",
+    "core-impl-kotlinx-coroutine-core",
+    "core-impl-kotlinx-coroutine-android",
+    "core-impl-kotlinx-corotuine-play-service",
+    "core-impl-org-json"
+]
+
+main-kapts = [
+    "main-kapt-glide-compiler",
+    "main-kapt-google-dagger"
+]
+
+main-androidtestimpl = [
+    "main-androidtestimpl-ext-junit",
+    "main-androidtestimpl-espresso"
+]

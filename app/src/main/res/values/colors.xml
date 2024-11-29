@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+
+    <!-- Main Color -->
+    <color name="primaryColor">@color/palette1_02</color>
+    <color name="primaryColorDark">@color/palette1_01</color>
+    <color name="secondaryColor">@color/palette1_03</color>
+    <color name="accentColor">@color/palette1_04</color>
+    <!-- Main Color -->
+
+    <!-- Palette1 -->
+    <color name="palette1_01">#059212</color>
+    <color name="palette1_02">#06D001</color>
+    <color name="palette1_03">#9BEC00</color>
+    <color name="palette1_04">#F3FF90</color>
+    <!-- Palette1 -->
+</resources>
